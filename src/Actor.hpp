@@ -12,6 +12,7 @@ public :
     Container *container; //can contain actors
     Sentient *sentient; //Can be sentient
     float getDistance(int cx, int cy) const; 
+    TCODNamegen *nameGen;
     
     Actor(int x, int y, int ch, const char *name, const TCODColor &col);
     Actor(int x, int y, int race, int job, int statBlock);

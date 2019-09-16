@@ -13,10 +13,9 @@ Actor::Actor(int x, int y, int race, int job, int statBlock) : x(x),y(y), blocks
     sentient = new Sentient(race, job, statBlock);
     
     //name
-    TCODNamegen::parse("data/names.txt",TCODRandom::getInstance());
-    name = TCODNamegen::generate("king", false);
-    TCODNamegen::destroy();
-    
+    nameGen->parse("data/names.txt",TCODRandom::getInstance());
+    name = strdup( TCODNamegen::generate("human", false));
+
     ch = sentient->race->ch;
     col = sentient->job->col;
 }
