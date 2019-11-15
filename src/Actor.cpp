@@ -14,8 +14,18 @@ Actor::Actor(int x, int y, int race, int job, int statBlock) : x(x),y(y), blocks
     
     //name
     nameGen->parse("data/names.txt",TCODRandom::getInstance());
-    name = strdup( TCODNamegen::generate("human", false));
 
+    switch (race){
+        case(Sentient::RACE_HUMAN):
+            name = strdup( TCODNamegen::generate("human", false));
+            break;
+        case(Sentient::RACE_BULLKAT):
+            name = strdup( TCODNamegen::generate("bullkat", false));
+            break;
+        case(Sentient::RACE_AUTOMA):
+            name = strdup( TCODNamegen::generate("automa", false));
+            break;
+    }
     ch = sentient->race->ch;
     col = sentient->job->col;
 }
@@ -44,3 +54,6 @@ float Actor::getDistance(int cx, int cy) const{
     return sqrtf(dx*dx+dy*dy);
 }
 
+bool Actor::interaction(int successRange){
+    
+}

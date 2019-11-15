@@ -7,6 +7,23 @@ name "king" {
 
 name "human" {
   syllablesStart = "Alexander, Augustus, Casimir, Henry, John, Louis, Sigismund,Stanislao, Stephen, Wenceslaus, James"
-  syllablesEnd = "Bathory, Herman, Jogaila, Lambert, Bohemia, Probus, Spindleshanks, Tanglefoot, Vasa, Wrymouth, Rothman"
-  rules = "%50$e, $s_$e"
+  syllablesMiddle = "Dart, Biggs, Faster, Crash, The Robot, Tink, Chuckles"
+  syllablesEnd = "Bathory, Herman, Jogaila, Lambert, Mc Larson, Bohemia, Probus, Spindleshanks, Tanglefoot, Vasa, Wrymouth, Rothman"
+  rules = "%50$e, %15'$m', %25$s_'$m'_$e,  $s_$e"
+}
+
+name "bullkat" {
+  syllablesStart = "Hasha, Prutt, Krai, Shie, Arrik"
+  syllablesMiddle = "Whiskers, Bramblepelt, Hiss"
+  rules = "%25'$m', $s"
+}
+
+name "automa" {
+  syllablesPre = "8, 0, P, D, T, C, R"
+  syllablesStart = "00, 4, 3, 1"
+  syllablesMiddle = "0, A0G, 09, "
+  syllablesEnd = "100, 1000, 200, 2000, 9000, 959, "
+  syllablesPost = "G-Series"
+
+  rules = "%10$P$s-$m$e ($p), %10$P-$e, $%10$s-$m, %10$P$s-$m, %10$s-$e, %10$s$m:$e, %10$P-$e, %10$m$e, %10$s-$m$e, %10$P-$s$e"
 }

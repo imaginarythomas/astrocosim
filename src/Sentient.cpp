@@ -7,9 +7,28 @@ StatBlock::StatBlock(int type){
 }
 
 void StatBlock::generate(int type){
+    //TODO: Type not used yet
     //Rolls
-    int roll[10] = {4,3,3,3,3,2,2,2,1,1};
-    
+    int roll[10];
+    TCODRandom *rng=TCODRandom::getInstance();
+
+    for (int x = 0; x <=9; x++){
+        roll[x] = rng->getInt(1,4);
+    }
+    /*
+    switch(type){
+        case(StatBlock::TYPE_GENERAL):
+        default:
+            roll = {4,3,3,3,3,2,2,2,1,1};
+            break;
+        case(StatBlock::TYPE_WEAKROLLS):
+            roll = {4,3,3,3,2,2,1,1,1,1};
+            break;
+        case(StatBlock::TYPE_STRONGROLLS):
+            roll = {4,4,4,3,3,3,2,2,1,1};
+            break;
+    }
+     */
     //Shuffle the roll
     //std::random_shuffle(&roll[0], &roll[9]);
     

@@ -1,4 +1,4 @@
-build/Debug/GNU-Linux/src/Pickable.o: src/Pickable.cpp src/main.hpp \
+build/Debug/GNU-Linux/src/Engine.o: src/Engine.cpp src/main.hpp \
  /home/imaginarythomas/cpp/cppTut/include/libtcod.hpp \
  /home/imaginarythomas/cpp/cppTut/include/libtcod.h \
  /home/imaginarythomas/cpp/cppTut/include/list.h \

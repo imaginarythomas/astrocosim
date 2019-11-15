@@ -43,10 +43,10 @@ build/Debug/GNU-Linux/src/Ai.o: src/Ai.cpp src/main.hpp \
  /home/imaginarythomas/cpp/cppTut/include/heightmap.hpp \
  /home/imaginarythomas/cpp/cppTut/include/zip.hpp \
  /home/imaginarythomas/cpp/cppTut/include/namegen.hpp \
- /home/imaginarythomas/cpp/cppTut/include/txtfield.hpp \
- include/Persistent.hpp src/Destructible.hpp src/Attacker.hpp src/Ai.hpp \
- include/Sentient.hpp src/Pickable.hpp src/Container.hpp src/Actor.hpp \
- src/Map.hpp src/Menu.hpp src/Gui.hpp src/Engine.hpp
+ /home/imaginarythomas/cpp/cppTut/include/txtfield.hpp src/Persistent.hpp \
+ src/Destructible.hpp src/Attacker.hpp src/Ai.hpp src/Sentient.hpp \
+ src/Pickable.hpp src/Container.hpp src/Actor.hpp src/Map.hpp \
+ src/Menu.hpp src/Gui.hpp src/Engine.hpp
 
 src/main.hpp:
 
@@ -140,7 +140,7 @@ src/main.hpp:
 
 /home/imaginarythomas/cpp/cppTut/include/txtfield.hpp:
 
-include/Persistent.hpp:
+src/Persistent.hpp:
 
 src/Destructible.hpp:
 
@@ -148,7 +148,7 @@ src/Attacker.hpp:
 
 src/Ai.hpp:
 
-include/Sentient.hpp:
+src/Sentient.hpp:
 
 src/Pickable.hpp:
 

@@ -14,9 +14,13 @@ public :
     float getDistance(int cx, int cy) const; 
     TCODNamegen *nameGen;
     
+    //Generic actor
     Actor(int x, int y, int ch, const char *name, const TCODColor &col);
+    //Sentient Actor
     Actor(int x, int y, int race, int job, int statBlock);
     ~Actor();  
+    
+    bool interaction(int successRange);
     
     void update();
     void render() const;

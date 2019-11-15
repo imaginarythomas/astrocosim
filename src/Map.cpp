@@ -195,7 +195,14 @@ void Map::addMachine(int x, int y){
 
 void Map::addMonster(int x, int y){
     TCODRandom *rng=TCODRandom::getInstance();
-    Actor *npc = new Actor(x,y,Sentient::RACE_HUMAN, Sentient::JOB_PILOT, StatBlock::TYPE_GENERAL);
+    //TODO Randomize race
+    int randRace = rng->getInt(1,3);
+    //TODO Randomize job
+    int randJob = rng->getInt(1,5);
+    //TODO Randomize statblock
+    int randBlock = rng->getInt(1,4);
+    
+    Actor *npc = new Actor(x,y,randRace, randJob, randBlock);
     npc->destructible = new MonsterDestructible(10,0,"corpse");
     npc->attacker = new Attacker(3);
     npc->ai = new IdleNPCAi();    
